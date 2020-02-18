@@ -7,3 +7,16 @@ SELECT hr.departments.* FROM HR.departments;
 
 --listázza ki a hr.employees tábla adatait
 SELECT hr.employees.* FROM HR.employees;
+
+--listázza ki az országok neveit a hr.countries táblából
+SELECT   hr.countries.country_name as "asd" FROM HR.countries;
+
+--listázza ki 
+select 1+1 from dual;
+--listázza ki
+
+--listázza ki
+
+--listázza ki
+
+--listázza ki
