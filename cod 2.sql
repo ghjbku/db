@@ -13,10 +13,9 @@ SELECT   hr.countries.country_name as "asd" FROM HR.countries;
 
 --listázza ki 
 select 1+1 from dual;
---listázza ki
-
---listázza ki
-
+--listázza ki()[]{}<>
+--listázza ki az országok neveit és kódjaikat a hr.countries táblából
+SELECT   hr.countries.country_name as "names",country_id as "IDs" FROM HR.countries;
 --listázza ki
 
 --listázza ki
