@@ -31,3 +31,5 @@ FROM HR.employees;
 SELECT
     last_name|| ' ' ||first_name as "teljes név" 
 FROM HR.employees;
+
+select CONCAT(CONCAT(last_name,' '), first_name) as full_name from HR.employees;
