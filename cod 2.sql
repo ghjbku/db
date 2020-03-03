@@ -127,3 +127,10 @@ select '*' || ltrim('                       abrakadabra             ')|| '*',
 '*' ||rtrim ('                       abrakadabra             ')|| '*',
 '*' ||trim ('                       abrakadabra             ')|| '*'
 from dual;
+https://docs.oracle.com/database/121/SQLRF/functions235.htm#SQLRF06149
+
+select '*'|| lpad('ssdadsada', 15,'=')|| '*',
+'*' || rpad('asdass', 15,'=++%')|| '*' from dual;
+
+select rpad(country_name,50,'.') || to_char(region_id) from HR.countries;
+
