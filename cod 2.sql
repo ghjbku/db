@@ -110,11 +110,20 @@ select sqrt(salary) as "sal" from HR.employees;
 --out of range error
 select sqrt(salary-10000) as "sal" from HR.employees;
 
+select acos(-1) from dual;
+
 --karakter kezelő fvek
 --------karaktert visszaadó
 select unique chr(65),chr(66),chr(97),chr(122)
 from hr.countries;
 select chr(65),chr(66),chr(97),chr(122)
 from dual;
+select initcap('egy kettő három') from dual;
+select lower('Nemecsek ERnő') from dual;
+select upper('Nemecsek ERnő') from dual;
 
 
+select '*' || ltrim('                       abrakadabra             ')|| '*',
+'*' ||rtrim ('                       abrakadabra             ')|| '*',
+'*' ||trim ('                       abrakadabra             ')|| '*'
+from dual;
