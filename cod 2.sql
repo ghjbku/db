@@ -104,3 +104,8 @@ select hr.employees.first_name,hr.employees.last_name from hr.employees where hr
 --comission pct nem null, és csökkenő sorrendben legyen a com_pct
 select hr.employees.first_name,hr.employees.last_name,commission_pct from hr.employees where hr.employees.commission_pct is not null order by commission_pct desc;
 select hr.employees.first_name,hr.employees.last_name,commission_pct from hr.employees where hr.employees.commission_pct is not null order by 3 desc;
+
+---------------------------------------------------------------------single line functions
+select sqrt(salary) as "sal" from HR.employees;
+--out of range error
+select sqrt(salary-10000) as "sal" from HR.employees;
