@@ -134,3 +134,16 @@ select '*'|| lpad('ssdadsada', 15,'=')|| '*',
 
 select rpad(country_name,50,'.') || to_char(region_id) from HR.countries;
 
+select country_name,  replace(replace(replace(country_name, 'a', 'i'),'e','eve'),'u','bam')from hr.countries;
+
+select country_name, regexp_replace(country_name,'{aeiou}','.') from HR.countries;
+
+select regexp_replace('a0brg13gh54hbnaa', '[a-z]',' ') from dual;
+select regexp_replace('a0brg13gh54hbnaa', '[^0-9]',' ') from dual;
+
+select SUBSTR('abracadabra',3,5),SUBSTR('abracadabra',-3)from dual;
+select REGEXP_SUBSTR('abracadabra', '[cbr]') from dual;
+
+--------számot visszaadó
+--pontosan 2 a betű van a nevében
+select country_name from hr.countries where instr(country_name,'a',1,3)=0 and instr(country_name,'a',1,2)!=0;
