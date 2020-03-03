@@ -109,3 +109,12 @@ select hr.employees.first_name,hr.employees.last_name,commission_pct from hr.emp
 select sqrt(salary) as "sal" from HR.employees;
 --out of range error
 select sqrt(salary-10000) as "sal" from HR.employees;
+
+--karakter kezelő fvek
+--------karaktert visszaadó
+select unique chr(65),chr(66),chr(97),chr(122)
+from hr.countries;
+select chr(65),chr(66),chr(97),chr(122)
+from dual;
+
+
