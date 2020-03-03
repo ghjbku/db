@@ -98,3 +98,7 @@ select hr.employees.first_name, hr.employees.last_name, hr.employees.salary from
 
 --listázza ki azoknak a dolgozóknak a kereszt és vezetéknevét, akiknek nincs főnökük
 select hr.employees.first_name,hr.employees.last_name from hr.employees where hr.employees.manager_id is null;
+
+--comission pct nem null, és csökkenő sorrendben legyen a com_pct
+select hr.employees.first_name,hr.employees.last_name,commission_pct from hr.employees where hr.employees.commission_pct is not null order by commission_pct desc;
+
