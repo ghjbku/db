@@ -96,9 +96,11 @@ akkor őket vezeték nevűk szerinti abc rendben sorolja fel.
 */
 select hr.employees.first_name, hr.employees.last_name, hr.employees.salary from  hr.employees order by salary desc,first_name asc;
 
+-----------------------------------------MÁRCIUS 3-----------------
+
 --listázza ki azoknak a dolgozóknak a kereszt és vezetéknevét, akiknek nincs főnökük
 select hr.employees.first_name,hr.employees.last_name from hr.employees where hr.employees.manager_id is null;
 
 --comission pct nem null, és csökkenő sorrendben legyen a com_pct
 select hr.employees.first_name,hr.employees.last_name,commission_pct from hr.employees where hr.employees.commission_pct is not null order by commission_pct desc;
-
+select hr.employees.first_name,hr.employees.last_name,commission_pct from hr.employees where hr.employees.commission_pct is not null order by 3 desc;
